@@ -32,7 +32,8 @@ const App = () => {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Text>Czesc tu Zuza</Text>
+          <Text>Czesc tu Zuza,</Text>
+          <Text> uczę się programować</Text>
         </ScrollView>
      
     </View>

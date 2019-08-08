@@ -1,50 +1,32 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React, {Component} from 'react';
+import { StyleSheet, ScrollView, View, Text, StatusBar,} from 'react-native';
+import Component1 from './Components/Component1/Component1';
 
-import React, {Fragment} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App = () => {
+export default class App extends Component {
+  render(){
   return (
     <View>
       <StatusBar barStyle="dark-content" />
- 
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
+         <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
+
           <Text>Czesc tu Zuza,</Text>
           <Text> uczę się programować</Text>
+
+
+          <Component1 />
+
+
         </ScrollView>
-     
     </View>
   );
+  }
 };
 
 const styles = StyleSheet.create({
   scrollView: {
-    backgroundColor: Colors.lighter,
+    backgroundColor: 'white',
   },
  
 });
 
-export default App;
+

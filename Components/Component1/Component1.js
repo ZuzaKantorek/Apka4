@@ -7,7 +7,7 @@ export default class Component1 extends Component {
     return (
       <View>
         <StatusBar barStyle="dark-content" />
-           <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
+           {/* <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}> */}
   
             <Text>This is Component1</Text>
 
@@ -16,8 +16,9 @@ export default class Component1 extends Component {
   
   
   
-          </ScrollView>
+          {/* </ScrollView> */}
       </View>
+      
     );
     }
   };
